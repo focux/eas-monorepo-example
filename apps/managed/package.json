@@ -11,12 +11,15 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "eas-build-post-install": "yarn workspaces run build"
+    "eas-build-pre-install": "cd ~/ && npm install -g npm@^7 && npm --version",
+    "eas-build-post-install": "npm run build --workspaces"
   },
   "dependencies": {
     "@acme/ui": "*",
     "expo": "^44.0.0",
+    "expo-dev-client": "~0.8.4",
     "expo-status-bar": "~1.2.0",
+    "expo-updates": "~0.11.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
