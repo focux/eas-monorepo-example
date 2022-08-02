@@ -13,7 +13,6 @@
     "eas-build-post-install": "pnpm run -r --if-present build"
   },
   "dependencies": {
-    "@acme/ui": "*",
     "expo": "^44.0.0",
     "expo-dev-client": "~0.8.0",
     "expo-splash-screen": "~0.14.1",
@@ -30,8 +29,6 @@
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
-    "@acme/babel-preset-expo": "*",
-    "@acme/eslint-config": "*",
     "@babel/core": "^7.12.9",
     "@expo/config-plugins": "^4.0.6",
     "@types/react": "~17.0.21",
